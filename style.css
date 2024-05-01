@@ -43,7 +43,8 @@ form {
   grid-gap: 10px;
   grid-template-columns: 1fr;
   max-width: 300px;
-  margin: auto;
+  margin: auto; /* This centers the form within its container */
+  text-align: center; /* This should center the text inside grid items */
 }
 
 input,
@@ -53,16 +54,20 @@ textarea {
 }
 
 button {
-  width: 100%;
-  padding: 10px;
+  width: 150px; /* Explicit width */
+  margin: 0 auto; /* Centering the button inside the grid cell */
+  padding: 8px 15px;
+  font-size: 14px;
   background-color: #007bff;
   color: white;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
+  display: block; /* Ensure the button is a block element to respect the margin auto */
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #0056b3; /* Interaction feedback color */
 }
 
 #message-response {
@@ -76,4 +81,35 @@ button:hover {
 
 .error {
   color: red;
+}
+
+#resume {
+  text-align: center;
+  padding: 10px 0; /* Reduced padding */
+  background: none; /* Ensuring no background */
+  border: none; /* Ensuring no borders */
+  box-shadow: none; /* Ensuring no shadows */
+}
+
+#resume p {
+  font-size: 14px; /* Smaller font size for description */
+  color: #666; /* Lighter color for less emphasis */
+}
+
+#resume a {
+  text-decoration: none; /* Remove underline from links */
+}
+
+#resume button {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #007bff; /* Primary button color */
+  color: white;
+  border: none; /* Ensuring no borders */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#resume button:hover {
+  background-color: #0056b3; /* Interaction feedback color */
 }
