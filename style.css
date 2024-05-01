@@ -1,0 +1,79 @@
+body {
+  font-family: "Space Mono", monospace;
+}
+
+header,
+footer {
+  background-color: #f8f8f8;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px; /* Adjust spacing between icons */
+}
+
+nav ul li a {
+  color: black; /* Icon color */
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #555; /* Icon hover color */
+}
+
+i {
+  font-size: 24px; /* Icon size */
+}
+
+section {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #cccccc;
+}
+
+form {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr;
+  max-width: 300px;
+  margin: auto;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#message-response {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}

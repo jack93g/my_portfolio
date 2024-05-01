@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Jack William Gibbons</h1>
+      <nav>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/jack-wg/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/jack93g" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="mailto:morning.genes_0g@icloud.com"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h1>About Me</h1>
+      <h3>Data & Product Analyst @ asgoodasnew Electronics</h3>
+      <p>I am a data analyst with front-end development skills and a strong focus on tracking. 
+        I thrive at the intersection of data and design, where I utilise my abilities to optimise conversion rates and drive marketing campaigns. 
+        Working closely with marketing teams and product managers, I leverage data-driven insights to influence strategies and enhance business outcomes. 
+        My passion lies in turning complex data into compelling visualisations and actionable intelligence.</p>
+    </section>
+
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Interested in collaborating? Get in touch!</p>
+      <form id="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Send</button>
+      </form>
+      <div id="message-response" style="display: none; color: green; margin-top: 20px;"></div>
+  </section>
+
+    <footer>
+      <p>© 2024 Jack William Gibbons</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
