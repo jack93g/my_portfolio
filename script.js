@@ -27,9 +27,9 @@ document
   });
 
 document.addEventListener("DOMContentLoaded", function () {
-  document
-    .getElementById("login-form")
-    .addEventListener("submit", function (event) {
+  var loginForm = document.getElementById("login-form");
+  if (loginForm) {
+    loginForm.addEventListener("submit", function (event) {
       event.preventDefault(); // Prevent the default form submission
 
       // Push the login event to the dataLayer
@@ -39,10 +39,8 @@ document.addEventListener("DOMContentLoaded", function () {
         username: document.getElementById("username").value,
       });
 
-      // Optionally, you can proceed with form submission here
-      // For example, you can use AJAX to send the form data to the server
-      // Or you can redirect the user to another page
-
+      // Display a message or handle the fake login
       console.log("Login event pushed to dataLayer!");
     });
+  }
 });
