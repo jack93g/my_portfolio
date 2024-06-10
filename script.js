@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
       window.dataLayer.push({
         event: "login",
         username: document.getElementById("username").value,
+        loginMethod: "email",
       });
 
       // Display a message or handle the fake login
