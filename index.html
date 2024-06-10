@@ -2,12 +2,19 @@
 <html lang="en">
   <head>
     <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-W9TJK5KK');</script>
-  <!-- End Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-W9TJK5KK");
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
@@ -15,22 +22,43 @@
       href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W9TJK5KK"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-W9TJK5KK"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <header>
       <h1>Jack William Gibbons</h1>
       <nav>
         <ul>
-            <li><a href="https://www.linkedin.com/in/jack-wg/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://github.com/jack93g" target="_blank"><i class="fab fa-github"></i></a></li>
-            <li><a href="mailto:morning.genes_0g@icloud.com"><i class="fas fa-envelope"></i></a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/jack-wg/" target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/jack93g" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="mailto:morning.genes_0g@icloud.com"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -38,55 +66,84 @@
     <section id="about">
       <h1>About Me</h1>
       <h3>Data & Product Analyst @ asgoodasnew Electronics</h3>
-      <p>I JOINed the tech industry to SELECT the best opportunities and INSERT myself into challenging projects. With a primary key in tracking and a unique index on reporting, I ensure that every metric COUNTS. Let's not TABLE this discussion; get in touch if you think we're a MATCH!</p>
+      <p>
+        I JOINed the tech industry to SELECT the best opportunities and INSERT
+        myself into challenging projects. With a primary key in tracking and a
+        unique index on reporting, I ensure that every metric COUNTS. Let's not
+        TABLE this discussion; get in touch if you think we're a MATCH!
+      </p>
 
-        <section id="resume">
-          <p>Download my resume to learn more about my work experience and skills.</p>
-          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-              <button type="button">Download Resume</button>
-          </a>
+      <section id="resume">
+        <p>
+          Download my resume to learn more about my work experience and skills.
+        </p>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+          <button type="button">Download Resume</button>
+        </a>
       </section>
-      
-    </section>
-
     </section>
 
     <section id="skills">
       <h2>Skills</h2>
       <ul>
-          <li>Google Analytics 4 (GA4)</li>
-          <li>Google Tag Manager (GTM)</li>
-          <li>BigQuery</li>
-          <li>JavaScript</li>
-          <li>Python</li>
+        <li>Google Analytics 4 (GA4)</li>
+        <li>Google Tag Manager (GTM)</li>
+        <li>BigQuery</li>
+        <li>JavaScript</li>
+        <li>Python</li>
       </ul>
-  </section>
-  
+    </section>
 
     <section id="contact">
       <h2>Contact</h2>
       <p>Interested in collaborating? Get in touch!</p>
       <form id="contact-form">
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-          <button type="submit">Send</button>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send</button>
       </form>
-      <div id="message-response" style="display: none; color: green; margin-top: 20px;"></div>
-  </section>
+      <div
+        id="message-response"
+        style="display: none; color: green; margin-top: 20px"
+      ></div>
+    </section>
+
+    <section id="login">
+      <h2>Login</h2>
+      <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <button type="submit">Login</button>
+      </form>
+    </section>
 
     <footer>
       <section id="social-share">
         <h2>Share This Page</h2>
         <p>Enjoyed my portfolio? Share it on social media!</p>
-        <a href="https://www.facebook.com/sharer/sharer.php?u=jackwilliamgibbons.eu" target="_blank">Facebook</a>
-        <a href="https://twitter.com/intent/tweet?url=jackwilliamgibbons.eu&text=Check%20out%20my%20professional%20portfolio!" target="_blank">Twitter</a>
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url=jackwilliamgibbons.eu" target="_blank">LinkedIn</a>
-    </section>
-    
+        <a
+          href="https://www.facebook.com/sharer/sharer.php?u=jackwilliamgibbons.eu"
+          target="_blank"
+          >Facebook</a
+        >
+        <a
+          href="https://twitter.com/intent/tweet?url=jackwilliamgibbons.eu&text=Check%20out%20my%20professional%20portfolio!"
+          target="_blank"
+          >Twitter</a
+        >
+        <a
+          href="https://www.linkedin.com/shareArticle?mini=true&url=jackwilliamgibbons.eu"
+          target="_blank"
+          >LinkedIn</a
+        >
+      </section>
+
       <p>© 2024 Jack William Gibbons</p>
     </footer>
 
