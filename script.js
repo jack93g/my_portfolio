@@ -27,21 +27,25 @@ document
   });
 
 document.addEventListener("DOMContentLoaded", function () {
-  var loginForm = document.getElementById("login-form");
-  if (loginForm) {
-    loginForm.addEventListener("submit", function (event) {
+  document
+    .getElementById("login-form")
+    .addEventListener("submit", function (event) {
       event.preventDefault(); // Prevent the default form submission
+
+      // Get the login method value
+      var loginMethod = document.querySelector(
+        'input[name="login-method"]:checked'
+      ).value;
 
       // Push the login event to the dataLayer
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({
         event: "login",
         username: document.getElementById("username").value,
-        loginMethod: "email",
+        loginMethod: loginMethod,
       });
 
       // Display a message or handle the fake login
       console.log("Login event pushed to dataLayer!");
     });
-  }
 });
