@@ -25,3 +25,24 @@ document
     // Clear form fields
     document.getElementById("contact-form").reset();
   });
+
+document.addEventListener("DOMContentLoaded", function () {
+  document
+    .getElementById("login-form")
+    .addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      // Push the login event to the dataLayer
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: "login",
+        username: document.getElementById("username").value,
+      });
+
+      // Optionally, you can proceed with form submission here
+      // For example, you can use AJAX to send the form data to the server
+      // Or you can redirect the user to another page
+
+      console.log("Login event pushed to dataLayer!");
+    });
+});
