@@ -26,26 +26,25 @@ document
     document.getElementById("contact-form").reset();
   });
 
-document.addEventListener("DOMContentLoaded", function () {
-  document
-    .getElementById("login-form")
-    .addEventListener("submit", function (event) {
-      event.preventDefault(); // Prevent the default form submission
+window.dataLayer = window.dataLayer || [];
 
-      // Get the login method value
-      var loginMethod = document.querySelector(
-        'input[name="login-method"]:checked'
-      ).value;
+// Listen for form submission
+document
+  .getElementById("login-field")
+  .addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent the default form submission
 
-      // Push the login event to the dataLayer
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({
-        event: "login",
-        username: document.getElementById("username").value,
-        loginMethod: loginMethod,
-      });
+    // Retrieve the username
+    var username = document.getElementById("username").value;
 
-      // Display a message or handle the fake login
-      console.log("Login event pushed to dataLayer!");
+    // Push custom login event to the data layer
+    window.dataLayer.push({
+      event: "customLoginEvent",
+      username: username,
     });
-});
+
+    // You can also add any other custom logic here
+    // For example, actually submit the form or handle authentication
+
+    console.log("Custom login event pushed");
+  });
