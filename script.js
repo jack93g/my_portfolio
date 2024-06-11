@@ -26,9 +26,6 @@ document
     document.getElementById("contact-form").reset();
   });
 
-window.dataLayer = window.dataLayer || [];
-
-// Listen for form submission
 document
   .getElementById("login-field")
   .addEventListener("submit", function (event) {
@@ -38,13 +35,18 @@ document
     var username = document.getElementById("username").value;
 
     // Push custom login event to the data layer
+    window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
-      event: "customLoginEvent",
+      event: "login",
       username: username,
     });
 
-    // You can also add any other custom logic here
-    // For example, actually submit the form or handle authentication
+    // Optionally, you can handle form submission or redirection here
+    // For example, redirect to another page
+    // window.location.href = 'another-page.html';
 
-    console.log("Custom login event pushed");
+    console.log(
+      "Custom login event pushed to data layer with username:",
+      username
+    );
   });
